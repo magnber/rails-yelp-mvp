@@ -1,0 +1,13 @@
+<div class="container">
+<%= simple_form_for(placeholder) do |f| %>
+  <div class="row">
+    <div class="col-6">
+      <%= f.input :name %>
+      <%= f.input :address %>
+      <%= f.input :phone_number %>
+      <%= f.select :category, collection: Restaurant::CATEGORIES %>
+      <%= f.submit class: 'btn btn-primary'%>
+    </div>
+    <% end %>
+  </div>
+</div>

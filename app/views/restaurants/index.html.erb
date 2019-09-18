@@ -1,0 +1,16 @@
+
+
+<div class="container justify-content-center">
+  <div class="row">
+      <% @restaurants.each do |r| %>
+    <div class="card p-2 m-2">
+      <div class="d-flex">
+        <h3> <%= r.name %></h3>
+      </div>
+      <p>Address: <%= r.address %></p>
+      <p>phone: <%= r.phone_number %></p>
+      <p>category: <%= r.category %></p>
+    </div>
+    <% end %>
+  </div>
+</div>
